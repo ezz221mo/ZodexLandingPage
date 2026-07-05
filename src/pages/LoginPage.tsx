@@ -85,7 +85,7 @@ export default function LoginPage({ onLogin, onNavigate }: LoginPageProps) {
                 type={showPassword ? 'text' : 'password'}
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className={`w-full px-4 py-3 rounded-lg text-sm border outline-none transition-all duration-300 pr-10 ${isDark ? 'border-[#494454] bg-[#121318] text-[#e3e1e9] focus:border-[#d0bcff]' : 'border-[#cbc3d7] bg-[#faf9f7] text-[#1a1b21] focus:border-[#6d3bd7]'}`}
+                className={`w-full px-4 py-3 rounded-lg text-sm border outline-none transition-all duration-300 pl-10 ${isDark ? 'border-[#494454] bg-[#121318] text-[#e3e1e9] focus:border-[#d0bcff]' : 'border-[#cbc3d7] bg-[#faf9f7] text-[#1a1b21] focus:border-[#6d3bd7]'}`}
                 placeholder="••••••••"
               />
               <button

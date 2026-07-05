@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useThemeContext } from '@components/ThemeProvider';
 import StatsCard from '@components/StatsCard';
 import ProjectModal from '@components/ProjectModal';
-import { Hexagon, LayoutDashboard, FolderOpen, LogOut, Plus, Pencil, Trash2, ExternalLink, Users, Layers, TrendingUp } from 'lucide-react';
+import { Hexagon, LayoutDashboard, FolderOpen, LogOut, Plus, Pencil, Trash2, ExternalLink, Users, Layers, TrendingUp, Menu } from 'lucide-react';
 import type { Project } from '@types/index';
 
 interface DashboardPageProps {
@@ -89,7 +89,7 @@ export default function DashboardPage({ projects, onLogout, onNavigate, addProje
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <button onClick={() => setSidebarOpen(true)} className="lg:hidden p-2 rounded-lg">
-                <LayoutDashboard className={`w-5 h-5 ${isDark ? 'text-[#e3e1e9]' : 'text-[#1a1b21]'}`} />
+                <Menu className={`w-5 h-5 ${isDark ? 'text-[#e3e1e9]' : 'text-[#1a1b21]'}`} />
               </button>
               <h1 className={`font-syne font-bold text-xl ${isDark ? 'text-[#e3e1e9]' : 'text-[#1a1b21]'}`}>لوحة التحكم</h1>
             </div>
