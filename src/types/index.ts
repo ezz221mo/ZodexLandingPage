@@ -5,7 +5,6 @@ export interface Project {
   imageUrl: string;
   techTags: string[];
   liveLink: string;
-  createdAt: string;
 }
 
 export interface NavLink {
@@ -19,12 +18,3 @@ export interface ServiceItem {
   description: string;
   icon: string;
 }
-
-export interface AdminCredentials {
-  email: string;
-  password: string;
-}
-
-export type ThemeMode = 'dark' | 'light';
-
-export type RoutePath = '/' | '/login' | '/admin/dashboard';
